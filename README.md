@@ -23,4 +23,4 @@ Start the application:
   
 Visit:
 
-    http://localhost:3003 in your browser to access Flitter.
+    http://localhost:3003 in your browser to access 404 Not Found.
