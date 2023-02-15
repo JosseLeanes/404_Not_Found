@@ -347,7 +347,7 @@ function createPostHtml(postData, largeFont = false) {
     var timestamp = timeDifference(new Date(), new Date(postData.createdAt));
 
     var likeButtonActiveClass = postData.likes.includes(userLoggedIn._id) ? "active" : "";
-    var retweetButtonActiveClass = postData.retweetUsers.includes(userLoggedIn._id) ? "active" : "";
+    //var retweetButtonActiveClass = postData.retweetUsers.includes(userLoggedIn._id) ? "active" : "";
     var largeFontClass = largeFont ? "largeFont" : "";
 
     var retweetText = '';
@@ -480,7 +480,7 @@ function outputPosts(results, container) {
     });
 
     if (results.length == 0) {
-        container.append("<span class='noResults'>No matches, try another thing</span>")
+        container.append("<span class='noResults'>No posts to show</span>")
     }
 }
 

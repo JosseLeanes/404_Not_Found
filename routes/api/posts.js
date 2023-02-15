@@ -199,7 +199,7 @@ async function getPosts(filter) {
     .catch(error => console.log(error))
 
     results = await User.populate(results, { path: "replyTo.postedBy"})
-    return await User.populate(results, { path: "retweetData.postedBy"});
+    return  await User.populate(results, { path: "retweetData.postedBy"});
 }
 
 module.exports = router;
