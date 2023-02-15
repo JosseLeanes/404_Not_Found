@@ -23,7 +23,7 @@ Start the application:
   
 Visit:
 
-    http://localhost:3003 in your browser to access 404 Not Found.
+    http://localhost:3900 in your browser to access 404 Not Found.
     
 ## User test
 
