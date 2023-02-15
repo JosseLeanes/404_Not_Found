@@ -4,7 +4,7 @@ block content
 
     .searchBarContainer
         i.fas.fa-search
-        input#searchBox(type="text", name="searchBox", data-search=selectedTab, placeholder="Search for users or posts")
+        input#searchBox(type="text", name="searchBox", data-search=selectedTab, placeholder="Search")
 
     .tabsContainer
         +createTab("Posts", `/search/posts`, selectedTab != "users")

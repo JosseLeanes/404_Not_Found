@@ -384,7 +384,7 @@ function createPostHtml(postData, largeFont = false) {
         if (postData.pinned === true) {
             pinnedClass = "active";
             dataTarget = "#unpinModal";
-            pinnedPostText = "<i class='fas fa-thumbtack'></i> <span>Pinned post</span>";
+            pinnedPostText = "<i class='fas fa-thumbtack'></i> <span>Pinned</span>";
         }
 
         buttons = `<button class='pinButton ${pinnedClass}' data-id="${postData._id}" data-toggle="modal" data-target="${dataTarget}"><i class='fas fa-thumbtack'></i></button>

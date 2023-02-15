@@ -1,9 +1,9 @@
 mixin createPostForm(userLoggedIn)
     .postFormContainer
         .userImageContainer
-            img(src=userLoggedIn.profilePic, alt="User's profile picture")
+            img(src=userLoggedIn.profilePic, alt="Profile pic")
         .textareaContainer
-            textarea#postTextarea(placeholder="What's happening?")
+            textarea#postTextarea(placeholder="What are you thinking?")
             .buttonsContainer
                 button#submitPostButton(disabled="") Post
 
@@ -19,9 +19,9 @@ mixin createReplyModal(userLoggedIn)
                     #originalPostContainer
                     .postFormContainer
                         .userImageContainer
-                            img(src=userLoggedIn.profilePic, alt="User's profile picture")
+                            img(src=userLoggedIn.profilePic, alt="Profile pic")
                         .textareaContainer
-                            textarea#replyTextarea(placeholder="What's happening?")
+                            textarea#replyTextarea(placeholder="Reply..")
                 .modal-footer
                     button.btn.btn-secondary(type='button', data-dismiss='modal') Close
                     button#submitReplyButton.btn.btn-primary(type='button', disabled="") Reply
@@ -31,7 +31,7 @@ mixin createDeletePostModal()
         .modal-dialog(role='document')
             .modal-content
                 .modal-header
-                    h5#deletePostModalLabel.modal-title Delete the post?
+                    h5#deletePostModalLabel.modal-title Delete post?
                     button.close(type='button', data-dismiss='modal', aria-label='Close')
                     span(aria-hidden='true') &times;
                 .modal-body
@@ -99,7 +99,7 @@ mixin createPinnedPostModal()
                     button.close(type='button', data-dismiss='modal', aria-label='Close')
                     span(aria-hidden='true') &times;
                 .modal-body
-                    p This post will appear at the top of your profile. You can only pin one post.
+                    p You can only pin one post. You'll see it at the top of your profile
                 .modal-footer
                     button.btn.btn-secondary(type='button', data-dismiss='modal') Cancel
                     button#pinPostButton.btn.btn-primary(type='button') Pin
@@ -109,11 +109,11 @@ mixin createUnpinPostModal()
         .modal-dialog(role='document')
             .modal-content
                 .modal-header
-                    h5#unpinModalLabel.modal-title Unpin the post?
+                    h5#unpinModalLabel.modal-title Unpin post?
                     button.close(type='button', data-dismiss='modal', aria-label='Close')
                     span(aria-hidden='true') &times;
                 .modal-body
                     p This post will be unpinned.
                 .modal-footer
                     button.btn.btn-secondary(type='button', data-dismiss='modal') Cancel
-                    button#unpinPostButton.btn.btn-primary(type='button') Pin
+                    button#unpinPostButton.btn.btn-primary(type='button') Unpin
