@@ -480,7 +480,7 @@ function outputPosts(results, container) {
     });
 
     if (results.length == 0) {
-        container.append("<span class='noResults'>Nothing to show.</span>")
+        container.append("<span class='noResults'>No matches, try another thing</span>")
     }
 }
 
@@ -510,7 +510,7 @@ function outputUsers(results, container) {
     });
 
     if(results.length == 0) {
-        container.append("<span class='noResults'>No results found</span>")
+        container.append("<span class='noResults'>No matches found</span>")
     }
 }
 

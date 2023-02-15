@@ -1,6 +1,6 @@
 :root {
     --font-family: Roboto;
-    --blue:#3d0842;
+    --violet:#3d0842;
     --blueLight: #feeafa;
     --blueBackground: #feeafa;
     --buttonHoverBg: #feeafa;
@@ -8,10 +8,7 @@
     --spacing: 15px;
     --greyText: rgb(101, 119, 134);
     --greyButtonText: rgba(0,0,0,0.34);
-    --red: #ff70a6;
     --redBackground: rgba(226,34,94,0.1);
-    --green: #3d0842;
-    --greenBackground: rgba(23,191,99,0.1);
 }
 
 * {
@@ -51,13 +48,13 @@ nav a {
     color: #212529;
 }
 
-nav a.blue {
-    color: var(--blue);
+nav a.violet {
+    color: var(--violet);
 }
 
 nav a:hover {
     background-color: var(--buttonHoverBg);
-    color: var(--blue);
+    color: var(--violet);
     border-radius: 50%;
 }
 
@@ -138,7 +135,7 @@ button span {
 }
 
 #submitPostButton {
-    background-color: var(--blue);
+    background-color: var(--violet);
     color: white;
     border: none;
     border-radius: 40px;
@@ -204,7 +201,7 @@ button span {
 
 .postButtonContainer button:hover {
     background-color: #d4edff;
-    color: var(--blue);
+    color: var(--violet);
     border-radius: 50%;
 }
 
@@ -230,7 +227,7 @@ button span {
 }
 
 .replyFlag a {
-    color: var(--blue);
+    color: var(--violet);
 }
 
 .post.largeFont .postBody,
@@ -252,7 +249,7 @@ button span {
 
 .coverPhotoSection {
     height: 180px;
-    background-color: var(--blue);
+    background-color: var(--violet);
     position: relative;
 }
 
@@ -280,8 +277,8 @@ button span {
 
 .profileButton,
 .followButton {
-    border: 1px solid var(--blue);
-    color: var(--blue);
+    border: 1px solid var(--violet);
+    color: var(--violet);
     font-weight: bold;
     padding: 5px 15px;
     border-radius: 60px;
@@ -295,7 +292,7 @@ button span {
 }
 
 .followButton.following {
-    background-color: var(--blue);
+    background-color: var(--violet);
     color: #fff;
 }
 
@@ -339,12 +336,12 @@ button span {
 }
 
 .tab.active {
-    color: var(--blue);
-    border-bottom: 2px solid var(--blue);
+    color: var(--violet);
+    border-bottom: 2px solid var(--violet);
 }
 
 .tab:hover {
-    color: var(--blue);
+    color: var(--violet);
     background-color: var(--blueBackground);
 }
 
@@ -404,7 +401,7 @@ button span {
 }
 
 .pinButton.active {
-    color: var(--blue);
+    color: var(--violet);
 }
 
 .pinnedPostText {
