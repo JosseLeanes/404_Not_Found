@@ -24,3 +24,11 @@ Start the application:
 Visit:
 
     http://localhost:3003 in your browser to access 404 Not Found.
+    
+## User test
+
+If you do not want to register, but still want to try the app use
+
+user: prueba@gmail.com (fake email)
+
+password: 123
